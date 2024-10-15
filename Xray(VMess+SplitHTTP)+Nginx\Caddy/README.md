@@ -1,6 +1,6 @@
 介绍：
 
-利用 Nginx 或 Caddy 支持 SplitHTTP 代理实现 Xray 的 VMess+SplitHTTP+TLS 应用，TLS 由 Nginx 启用及处理或由 Caddy 提供及处理。SplitHTTP 使用 HTTP 分块传输编码下载、使用多个 HTTP POST 请求进行上传，可解决 CDN 不支持 WebSocket、gRPC 问题。
+利用 Nginx 或 Caddy 支持 SplitHTTP 代理实现 Xray 的 VMess+SplitHTTP+TLS 应用，TLS 由 Nginx 启用及处理或由 Caddy 提供及处理。SplitHTTP 使用 HTTP 分块传输编码流式响应处理下载、使用多个 HTTP POST 请求进行上传，可解决 CDN 不支持 WebSocket/HTTPUpgrade、gRPC 问题。
 
 原理：
 
